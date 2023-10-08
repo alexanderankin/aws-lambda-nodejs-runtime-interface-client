@@ -19,7 +19,8 @@
     "tsc": "tsc -b src",
     "tsc:watch": "tsc -b src --watch",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "prepare": "husky install"
   },
   "author": "AWS Lambda",
   "license": "Apache-2.0",
@@ -63,7 +64,6 @@
     "eslint-plugin-prettier": "5.0.0",
     "fast-glob": "3.3.1",
     "fs-extra": "11.1.1",
-    "husky": "8.0.3",
     "js-yaml": "4.1.0",
     "mocha": "10.2.0",
     "nyc": "15.1.0",
